@@ -6,7 +6,7 @@ menu:
     即刻短文: /essay/ || fas fa-bars-staggered
   友链:
     友人帐: /link/ || anzhiyu-icon-link
-    # 朋友圈: /fcircle/ || anzhiyu-icon-artstation
+    朋友圈: /fcircle/ || anzhiyu-icon-artstation
     留言板: /comments/ || anzhiyu-icon-envelope
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
@@ -15,7 +15,7 @@ menu:
 
   我的:
     音乐馆: /music/ || anzhiyu-icon-music
-    # 追番页: /bangumis/ || anzhiyu-icon-bilibili
+    追番页: /bangumis/ || anzhiyu-icon-bilibili
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-conditioner/ || anzhiyu-icon-fan
 
@@ -992,10 +992,10 @@ home_top:
 
 # 朋友圈配置
 friends_vue:
-  enable: false
+  enable: true
   vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js
-  apiurl: # 朋友圈后端地址
-  top_background:
+  apiurl: https://jisuk.top/api/fcircle
+  top_background: https://bu.dusays.com/2023/12/11/6575eb3227750.jpg
 
 # 黑色模式粒子效果canvas
 universe:
