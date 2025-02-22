@@ -6,7 +6,8 @@
     "clean": "hexo clean",
     "build": "hexo clean && hexo generate",
     "server": "hexo clean && hexo generate && hexo server",
-    "deploy": "hexo clean && hexo generate && gulp && hexo deploy"
+    "deploy": "hexo clean && hexo bangumi -u && hexo generate && gulp && hexo deploy",
+    "bangumi": "hexo bangumi -u"
   },
   "hexo": {
     "version": "6.3.0"

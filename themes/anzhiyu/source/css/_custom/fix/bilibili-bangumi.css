@@ -1,4 +1,4 @@
-/* bilibli番剧插件 */
+/* bilibili番剧插件 */
 #page #article-container .bangumi-tab.bangumi-active {
   background: var(--anzhiyu-theme);
   color: var(--anzhiyu-ahoverbg);
@@ -28,7 +28,6 @@ a.bangumi-button.bangumi-nextpage:hover {
 .bangumi-button {
   padding: 5px 10px !important;
 }
-
 a.bangumi-tab {
   padding: 5px 10px !important;
 }
