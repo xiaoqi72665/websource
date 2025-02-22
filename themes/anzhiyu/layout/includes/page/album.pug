@@ -1,0 +1,21 @@
+#album
+  .author-content.author-content-item.album.single(style = `background: url(${theme.album.top_background}) left 28% / cover no-repeat !important;`)
+    .card-content
+      .author-content-item-tips 相册集
+      span.author-content-item-title 欢迎来到我的珍藏室，这里收录了我生命中的每一个精彩瞬间。📷
+      .content-bottom
+        .tips 每一帧影像都是一段珍贵的时光
+      .banner-button-group
+        a.banner-button(onclick='pjax.loadUrl("/about/")')
+          i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.5rem')
+          span.banner-button-text 关于我
+  .card-album
+    each i in site.data.album
+      .card(onclick=`pjax.loadUrl("${i.path_name}")`)
+        img.card_cover(src=i.cover)
+        .card__content
+          p.card__category=i.class_name
+          h3.card__heading=i.description
+    .album-content-nocover
+    .album-content-nocover
+    .album-content-nocover
