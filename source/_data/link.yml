@@ -1,0 +1,79 @@
+- class_name: 推荐博客
+  flink_style: flexcard
+  link_list:
+    - name: 叁叁Sanann
+      hundredSuffix: ""
+      link: https://sanann11.webnode.page/
+      avatar: https://bu.dusays.com/2022/09/21/632b2c915d0bd.jpg
+      descr: 心存善良，万物晴朗 𝐿𝒾𝓋𝑒  𝓁𝒾𝒻𝑒 
+      siteshot: https://bu.dusays.com/2022/10/11/634510de04d24.png
+    - name: 轻笑Chuckle
+      link: https://www.qcqx.cn
+      avatar: https://www.qcqx.cn/img/head.webp
+      descr: 漫天倾尘,风中轻笑
+      siteshot: https://www.qcqx.cn/img/chuckle.webp
+    - name: 铭心石刻
+      link: https://blog.kouseki.cn/
+      avatar: https://blog.kouseki.cn/imgs/avatar.webp
+      descr: 愿岁并谢，与友长兮
+      siteshot: https://blog.kouseki.cn/imgs/siteshot.webp
+
+- class_name: 模拟人生4MOD站
+  flink_style: flexcard
+  link_list:
+    - name: 3DM模拟人生4MOD站
+      link: https://mod.3dmgame.com/Sims4
+      avatar: https://bu.dusays.com/2022/09/21/632b310091b91.png
+      siteshot: https://bu.dusays.com/2022/09/21/632b31e411a26.png
+      descr: 游戏网站
+    - name: TSR Mod资源站
+      link: https://www.thesimsresource.com/
+      avatar: https://tsr-site-images.s3.amazonaws.com/local/site-wide/logo/main-logo-desktop_202206081917.jpeg
+      siteshot: https://bu.dusays.com/2022/09/22/632b3570f2601.png
+      descr: 游戏网站
+    - name: Catalog
+      link: https://thesimscatalog.com/sims4/
+      avatar: https://thesimscatalog.com/sims4/wp-content/uploads/2020/03/Sims_Catalog_Logo-1.png
+      siteshot: https://bu.dusays.com/2022/10/11/63450b737e3d7.png
+      descr: 游戏网站
+    - name: Sim4DW
+      link: https://sims4downloads.net/
+      avatar: https://sims4downloads.net/img/Sims4Downloads88x31.gif
+      siteshot: https://bu.dusays.com/2022/10/11/63450c2953081.png
+      descr: 游戏网站
+    - name: Nexus
+      link: https://www.nexusmods.com/thesims4
+      avatar: https://img0.baidu.com/it/u=13559685,1324842790&fm=253&fmt=auto&app=138&f=JPEG?w=256&h=256
+      siteshot: https://bu.dusays.com/2022/10/11/63450d3363629.png
+      descr: 游戏网站
+    - name: Patreon
+      link: https://www.patreon.com/
+      avatar: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.xz885.com%2F20201015%2F20201015151103249.png&refer=http%3A%2F%2Fimg.xz885.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1668062048&t=4b47c029bd250d4838be80a6b0338eb5
+      siteshot: https://bu.dusays.com/2022/10/11/63450de8df9ea.png
+      descr: 游戏网站
+    - name: Modthesims
+      link: https://modthesims.info/downloads/ts4/
+      avatar: https://static.modthesims2.com/images/mts_bulb_logo_small.png
+      siteshot: https://bu.dusays.com/2022/10/11/63450f6c02476.png
+      descr: 游戏网站
+    - name: pinterest
+      link: https://www.pinterest.com/
+      avatar: https://bu.dusays.com/2022/10/11/63451015459bd.png
+      siteshot: https://bu.dusays.com/2022/10/11/63451015459bd.png
+      descr: 游戏网站
+
+- class_name: 媒体网站
+  flink_style: flexcard 
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 視頻網站
+    - name: Weibo
+      link: https://www.weibo.com/
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+      descr: 中國最大社交分享平台
+    - name: Twitter
+      link: https://twitter.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台

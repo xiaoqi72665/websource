@@ -1,0 +1,435 @@
+- class_name: 关于页
+  subtitle: 爱意东升西落，浪漫至死不渝✨
+  avatarImg: https://bu.dusays.com/2023/06/13/64880281df2d4.png
+  name: Jackson
+  description: 是一名 青年美术家、视觉设计师、博主、学生
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 电影
+      - 手工艺
+      - 宠物
+      - 设计
+      - 音乐
+      - 未来
+      - 游戏
+      - 旅行
+      - 阅读
+  helloAbout: Hello there!
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    item:
+      - VC设计,视觉传达,CS,计算机科学
+      
+    img: https://bu.dusays.com/2023/11/19/65591711babe8.png
+  statistic:
+    link: /archives
+    text: 文章隧道
+    cover: https://img02.anheyu.com/adminuploads/1/2022/09/23/632d634f8376d.jpg
+  map:
+    title: 我现在住在
+    StrengthenTitle: 英格兰，布莱顿
+    background: https://bu.dusays.com/2023/11/19/6559120b4bada.png
+    backgroundDark: https://bu.dusays.com/2023/11/19/6559120b82258.png
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 2000
+    selfInfoTips2: 星座
+    selfInfoContent2: 狮子座
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 研究生🧑‍💻
+  personalities:
+    author_name: 主人公
+    personality_type: ENFJ-A
+    photo_url: https://bu.dusays.com/2023/06/13/6487fa4c80e29.jpeg
+    personality_img: https://www.16personalities.com/static/images/personality-types/avatars/enfj-protagonist.png
+    name_url: https://www.16personalities.com/ch/enfj-%E4%BA%BA%E6%A0%BC
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 做你所想，
+    maxim_bottom: 想你所做。
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 时空穿梭者
+    buff_bottom: 幻想力指数 MAX
+  game:
+    game_tips: 爱好游戏
+    game_title: 模拟人生
+    game_uid: "Steamid: 367998123"
+    game_bg: https://bu.dusays.com/2023/06/13/64887e4e97e96.jpg
+  comic:
+    comic_tips: 爱好美剧
+    comic_title: 追局
+    comic_list:
+      - name: 亢奋
+        href: https://movie.douban.com/subject/34463874/
+        cover: https://bu.dusays.com/2023/06/14/6488eae0af55f.webp
+      - name: 后翼弃兵
+        href: https://movie.douban.com/subject/32579283/
+        cover: https://bu.dusays.com/2023/06/14/6488eae0b0a44.webp
+      - name: 巴瑞
+        href: https://movie.douban.com/subject/26707518/
+        cover: https://bu.dusays.com/2023/06/14/6488eae0aef84.webp
+      - name: 风骚律师 
+        href: https://movie.douban.com/subject/34951007/
+        cover: https://bu.dusays.com/2023/06/14/6488eae0aee69.webp
+      - name: 绝命毒师
+        href: https://movie.douban.com/subject/3586996/
+        cover: https://bu.dusays.com/2023/06/14/6488eae0b2051.webp
+  like:
+    like_tips: 关注偏好
+    like_title: 未来创意
+    like_bg: https://bu.dusays.com/2023/06/14/6488ecc0b76f8.webp
+    like_bottom: 美术、设计、AI、软硬件、渗透等
+  music:
+    music_tips: 音乐偏好
+    music_title: 影视原声、轻音乐、Phonk、Lofi
+    music_bg: https://bu.dusays.com/2023/06/14/6488ee1e91da1.jpg
+    music_link: /music
+  reward_list:
+    - name: 狂躁の暴龙战士 
+      amount: 25.00 
+      datatime: 2022-11-01
+    - name: 李*悦小朋友 
+      
+      amount: 10.00 
+      datatime: 2022-10-26
+    - name: 小纪乌拉哇啦嘿 
+      
+      amount: 33.00 
+      datatime: 2022-10-22
+
+    - name: 月亮永悬不落 
+      
+      amount: 50.00 
+      datatime: 2023-07-30
+    - name: PP 
+      
+      amount: 66.00 
+      datatime: 2022-10-22
+    - name: 嘘别说话低调 
+      amount: 2.04 
+      datatime: 2022-10-11
+    - name: 糖七呀 
+      
+      amount: 33.00 
+      datatime: 2022-09-21
+    - name: Yy 
+      
+      amount: 20.00 
+      datatime: 2022-09-19
+    - name: ~233 
+      
+      amount: 88.00 
+      datatime: 2022-09-16
+    - name: KIA 
+      
+      amount: 100.00 
+      datatime: 2022-09-15
+    - name: Zidan 
+      
+      amount: 300.00 
+      datatime: 2022-09-14
+    - name: 小气宝 
+      
+      amount: 50.00 
+      datatime: 2022-09-12
+    - name: 日落总是一样 
+      
+      amount: 10.00 
+      datatime: 2022-09-11
+    - name: 干物女i 
+      
+      amount: 188.00 
+      datatime: 2022-09-11
+    - name: Woooo 
+      
+      amount: 111.00 
+      datatime: 2022-09-09
+    - name: 岄 
+      
+      amount: 15.00 
+      datatime: 2022-09-08
+    - name: Alex 
+      
+      amount: 20.00 
+      datatime: 2022-09-07
+    - name: 某林 
+       
+      amount: 20.00 
+      datatime: 2022-09-07
+    - name: 6_o 
+      
+      amount: 19.99 
+      datatime: 2022-09-06
+    - name: 烟花易冷 
+      
+      amount: 33.40 
+      datatime: 2022-09-05
+    - name: 某如 
+       
+      amount: 10.00 
+      datatime: 2022-09-03
+    - name: ʚїɞ 
+      
+      amount: 50.00 
+      datatime: 2022-09-02
+    - name: Chunzijia01 
+       
+      amount: 10.00 
+      datatime: 2022-09-02
+    - name: 偷苦茶字 
+      
+      amount: 10.00 
+      datatime: 2022-09-01
+    - name: S*r
+      
+      amount: 2.00 
+      datatime: 2023-06-22
+    - name: 建国以后不许成精
+      
+      amount: 2.00 
+      datatime: 2023-02-17
+    - name: MARKO
+      
+      amount: 9.99 
+      datatime: 2023-01-22
+
+    - name: 嵇不可失
+      
+      amount: 3.00 
+      datatime: 2023-01-07
+    - name: 🦮
+      
+      amount: 25.00 
+      datatime: 2022-11-01
+    - name: .·
+      
+      amount: 10.00 
+      datatime: 2022-10-26
+    - name: 猫 妹妹～
+      
+      amount: 200.00 
+      datatime: 2023-07-10
+    - name: Regret
+      
+      amount: 20.00 
+      datatime: 2023-07-03
+    - name: 🕊️
+      
+      amount: 5.00 
+      datatime: 2022-10-17
+    - name: 包子
+      
+      amount: 10.00 
+      datatime: 2023-07-27
+    - name: ෆ 俏俏🧸ྀི¹
+      
+      amount: 20.00 
+      datatime: 2023-07-28
+
+    - name: ~丹
+      
+      amount: 200.00 
+      datatime: 2022-09-15
+    - name: 宫崎🎶
+      
+      amount: 2.96 
+      datatime: 2022-09-06
+    - name: ~*丁
+      
+      amount: 4.00 
+      datatime: 2023-07-25
+    - name: 66🎶
+      
+      amount: 19.99
+      datatime: 2022-09-06
+    - name: N*y 
+      
+      amount: 50.00 
+      datatime: 2022-09-02
+    - name: Regret
+      
+      amount: 20.00 
+      datatime: 2023-07-02
+    - name: momo
+      amount: 55.50
+      datatime: 2022-04-10
+
+    - name: 抓住小可爱
+      amount: 99.99
+      datatime: 2022-10-11
+
+    - name: 大乐一个
+      amount: 76.80
+      datatime: 2022-09-10
+
+    - name: Cynicism
+      amount: 150.00
+      datatime: 2022-07-11
+
+    - name: TIMES
+      amount: 30.50
+      datatime: 2022-08-09
+
+    - name: 是NIKO啊
+      amount: 88.88
+      datatime: 2022-11-10
+
+    - name: Ric*den
+      amount: 45.60
+      datatime: 2022-12-10
+    - name: 🐇
+      amount: 120.00
+      datatime: 2022-11-27
+
+    - name: 小min呀
+      amount: 65.20
+      datatime: 2023-01-14
+
+    - name: El*r
+      amount: 21.50
+      datatime: 2023-03-02
+
+    - name: 梨子
+      amount: 50.00
+      datatime: 2022-09-21
+
+    - name: 泡泡李
+      amount: 75.30
+      datatime: 2022-12-09
+
+    - name: N*us
+      amount: 12.80
+      datatime: 2022-12-05
+
+    - name: Au*ra
+      amount: 36.20
+      datatime: 2023-02-19
+
+    - name: Z*ith
+      amount: 88.00
+      datatime: 2022-10-17
+
+    - name: Mir*e
+      amount: 50.00
+      datatime: 2023-11-23
+
+    - name: Ec*o
+      amount: 45.00
+      datatime: 2023-09-06
+
+    - name: N*春
+      amount: 50.00
+      datatime: 2023-10-27
+
+    - name: N*女
+      amount: 05.00
+      datatime: 2023-10-08
+
+    - name: N*HJF
+      amount: 10.00
+      datatime: 2023-09-10
+
+    - name: N💚
+      amount: 15.00
+      datatime: 2023-08-30
+
+    - name: 月亮永悬不落
+      amount: 50.00
+      datatime: 2023-07-29
+
+    - name: Blue
+      amount: 15.00
+      datatime: 2023-07-29
+    - name: Keiwii🎧 
+      amount: 2.00 
+      datatime: 2023-12-03
+    - name: 某*卿
+      amount: 1.00 
+      datatime: 2023-12-05
+    - name: 某饱
+      amount: 20.00 
+      datatime: 2023-12-06
+    - name: 某w
+      amount: 20.00 
+      datatime: 2023-12-09
+    - name: r*i
+      amount: 6.00 
+      datatime: 2023-12-09
+    - name: 1p狼
+      amount: 66.00 
+      datatime: 2023-11-05
+    - name: 小花在游荡
+      amount: 30.00 
+      datatime: 2023-11-11
+    - name: 4U
+      amount: 30.00 
+      datatime: 2023-11-12
+    - name: 奶啤KKang
+      amount: 20.00 
+      datatime: 2023-11-06
+    - name: 徐徐又胖了
+      amount: 111.00 
+      datatime: 2023-11-28
+    - name: 妮妮
+      amount: 88.00 
+      datatime: 2023-11-29     
+    - name: y*a
+      amount: 6.60 
+      datatime: 2023-12-14
+    - name: C*a
+      amount: 5.00 
+      datatime: 2023-12-11  
+    - name: 爱开摩托的老阳
+      amount: 70.00 
+      datatime: 2023-12-15    
+    - name: 某沐
+      amount: 6.66 
+      datatime: 2023-12-15   
+    - name: f*y
+      amount: 6.88 
+      datatime: 2023-12-16
+    - name: 熠*e
+      amount: 20.00 
+      datatime: 2023-12-18
+    - name: 某*雯
+      amount: 5.00 
+      datatime: 2023-12-18
+    - name: 某*仪
+      amount: 5.00 
+      datatime: 2023-12-03
+    - name: 某*雨
+      amount: 50.00 
+      datatime: 2023-08-04
+    - name: 某*莎
+      amount: 20.00 
+      datatime: 2023-07-20
+    - name: 某*旭
+      amount: 8.00 
+      datatime: 2023-07-27
+    - name: 某*甄
+      amount: 10.00 
+      datatime: 2023-07-27
+    - name: 某*可
+      amount: 5.88 
+      datatime: 2023-05-15
+    - name: 某*涵
+      amount: 5.00 
+      datatime: 2022-12-07
+    - name: 某*静
+      amount: 10.00 
+      datatime: 2023-12-02
+    - name: 某*蓝
+      amount: 20.00 
+      datatime: 2023-12-20
+    - name: 某*喂
+      amount: 1.00 
+      datatime: 2023-12-20                     
+  extra: false

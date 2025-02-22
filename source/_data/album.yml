@@ -1,0 +1,94 @@
+- class_name: 旅途中的美景
+  path_name: /wordScenery
+  type: 2
+  description: 沿途的风景如同一幅流动的画卷，不断变换着色彩与光影
+  cover: https://bu.dusays.com/2023/06/14/6488f5cd032c1.jpg
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  album_list:
+    - date: 2023/03/16 01:00:00
+      content: 美丽的南昌。
+      address: 江西南昌
+      from: Jackson
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cdba831.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cbbc408.jpg
+    - date: 2022/10/26 01:00:00
+      content: 湘潭的一角。
+      address: 湖南湘潭
+      from: 再吃一口就减肥
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+    - date: 2022-10-25
+      content: 洛阳暴雨后的天空。
+      address: 河南洛阳
+      from: 紫菜卷
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+        - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
+
+- class_name: 生活日常
+  path_name: /dailyPhoto
+  type: 1
+  description: 美好的瞬间，最珍贵的回忆
+  cover: https://bu.dusays.com/2023/06/14/6488f5ce60f5c.jpg
+  album_list:
+    - date: 2023-07-29
+      content: 心里满是对友友的感谢！谢谢你们的三连！
+      image:
+        - https://bu.dusays.com/2023/07/29/64c43bf2e0485.png
+    - date: 2023-06-05
+      content: 为考试练打字速度，真不觉得我慢，俺又不是打字专员！痛恨所有考试！
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cfa38cd.jpg
+    - date: 2023-05-14
+      content: 母情节祝妈妈身体健康！
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cfa414d.jpg
+    - date: 2023-04-17
+      content: 只有南通4月才有的美食：冷蒸！
+      image:
+        - https://bu.dusays.com/2023/06/14/6488fee084ad8.jpg
+    - date: 2023-03-25
+      content: 给龙哥的花花
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cd263f2.jpg
+    - date: 2023-03-17
+      content: 呵！定义是什么，一边去吧！我从来就不知道，字典里没有！你呢？
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cbc390c.jpg
+    - date: 2023-03-21
+      content: 咱就是说，南昌有我们那儿的特色？逃不走的梦魇？
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cbbf493.jpg
+    - date: 2023-03-22
+      content: 盲盒拆拆拆
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cbc2411.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cbb8963.jpg
+    - date: 2023-03-21
+      content: 老城花鸟鱼虫市场
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cf1756e.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cee6979.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cec85f7.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5ce90b59.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5ce2efab.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cbbd97b.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cbb5ca2.jpg
+    - date: 2023-03-20
+      content: 南昌美食，超级好吃，跟龙哥嘎嘎炫！
+      image:
+        - https://bu.dusays.com/2023/06/14/6488f5cbb9f01.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cbbbe40.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cbb6812.jpg
+        - https://bu.dusays.com/2023/06/14/6488f5cd5d5dc.jpg
+        - https://bu.dusays.com/2023/06/14/6488fee083bf9.jpg
+        - https://bu.dusays.com/2023/06/14/6488fee084a6c.jpg
+        - https://bu.dusays.com/2023/06/14/6488fee085374.jpg
+        - https://bu.dusays.com/2023/06/14/6488fee087a18.jpg
+        - https://bu.dusays.com/2023/06/14/6488fee083f3d.jpg
+

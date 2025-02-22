@@ -1,0 +1,49 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "privatnode -ve": true,
+  "scripts": {
+    "clean": "hexo clean",
+    "build": "hexo clean && hexo generate",
+    "server": "hexo clean && hexo generate && hexo server",
+    "deploy": "hexo clean && hexo generate && gulp && hexo deploy"
+  },
+  "hexo": {
+    "version": "6.3.0"
+  },
+  "dependencies": {
+    "expand-brackets": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-terser": "^2.1.0",
+    "hexo": "^6.3.0",
+    "hexo-abbrlink": "^2.2.1",
+    "hexo-blog-encrypt": "^3.1.9",
+    "hexo-butterfly-envelope": "^1.0.15",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-anzhiyu": "^1.6.14",
+    "hexo-theme-landscape": "^1.0.0",
+    "workbox-build": "^7.0.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-plumber": "^1.2.1"
+  }
+}

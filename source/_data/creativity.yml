@@ -1,0 +1,53 @@
+- class_name: 开启创造力
+  creativity_list:
+    - name: 3DMAX
+      color: "#0d3b66"
+      icon: https://bu.dusays.com/2023/12/22/6584632a1e056.png
+    - name: Docker
+      color: "#f15bb5"
+      icon: https://bu.dusays.com/2023/04/09/643293b0f0abe.png
+    - name: Photoshop
+      color: "#02C39A"
+      icon: https://bu.dusays.com/2022/12/15/639aa3a5c240e.png
+    - name: KALI
+      color: "#00bbf9"
+      icon: https://bu.dusays.com/2023/12/22/6584632995cee.png
+    - name: Cinema4D
+      color: "#1A659E"
+      icon: https://bu.dusays.com/2023/12/22/6584632de3895.png
+    - name: CorelDRAW
+      color: "#fcf6bd"
+      icon: https://bu.dusays.com/2023/12/22/6584632b50e3d.png
+    - name: Python
+      color: "#d0f4de"
+      icon: https://bu.dusays.com/2023/04/09/643293b1230f7.png
+    - name: After Effects
+      color: "#0d3b66"
+      icon: https://bu.dusays.com/2023/12/22/658463285141d.png
+    - name: Lightroom
+      color: "#f4d35e"
+      icon: https://bu.dusays.com/2023/08/06/64cedb66b6f07.png
+    - name: Flash
+      color: "#ee964b"
+      icon: https://bu.dusays.com/2023/12/22/6584632648c3f.png
+    - name: Audition
+      color: "#B497D6"
+      icon: https://bu.dusays.com/2023/12/22/658463265697c.png
+    - name: Media Encoder
+      color: "#5fa8d3"
+      icon: https://bu.dusays.com/2023/12/22/65846e979ffad.png
+    - name: JS
+      color: "#e07a5f"
+      icon: https://bu.dusays.com/2023/04/09/643293b121f02.png
+    - name: HTML
+      color: "#81b29a"
+      icon: https://bu.dusays.com/2022/12/15/639aa3a5c241c.png
+    - name: Git
+      color: "#f2cc8f"
+      icon: https://bu.dusays.com/2023/04/09/643293b10ccdd.webp
+    - name: Premiere Pro
+      color: "#f4f1de"
+      icon: https://bu.dusays.com/2023/12/22/6584632725e0d.png
+    - name: illustrator
+      color: "#fcf6bd"
+      icon: https://bu.dusays.com/2023/12/22/65846329309b7.png
