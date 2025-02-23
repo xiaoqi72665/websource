@@ -2,7 +2,7 @@
 title: MOD冲突检测——每个玩家必备
 ai: false
 description: MOD冲突检测
-cover: 'https://i0.imgs.ovh/2024/02/28/7M4SN.png'
+cover: 'https://bu.dusays.com/2025/02/23/67bab882cd0ee.jpg'
 tags: Sim4Mod
 categories: Sim4Mod
 abbrlink: 1382213294

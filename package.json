@@ -7,7 +7,8 @@
     "build": "hexo clean && hexo generate",
     "server": "hexo clean && hexo generate && hexo server",
     "deploy": "hexo clean && hexo bangumi -u && hexo generate && gulp && hexo deploy",
-    "bangumi": "hexo bangumi -u"
+    "bangumi": "hexo bangumi -u",
+    "upload": "hexo clean && hexo generate && scp -r public/* root@1.95.212.101:/opt/1panel/apps/openresty/openresty/www/sites/kk/index/"
   },
   "hexo": {
     "version": "6.3.0"
@@ -36,6 +37,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-anzhiyu": "^1.6.14",
     "hexo-theme-landscape": "^1.0.0",
+    "hexo-wordcount": "^6.0.1",
     "pwa-asset-generator": "^6.4.0",
     "swpp-backends": "^3.0.0-alpha.901",
     "workbox-build": "^7.0.0"

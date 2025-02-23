@@ -74,7 +74,7 @@ social:
 author_status:
   enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
-  statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
+  statusImg: "https://bu.dusays.com/2025/02/23/67bab9e3a6b4a.gif"
   skills:
     # - 🤖️ 数码科技爱好者
     # - 🔍 分享与热心帮助
@@ -201,7 +201,7 @@ mainTone:
 
 # 字数统计
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -309,7 +309,7 @@ addtoany:
 comments:
   # 最多两个评论系统，第一个将作为默认显示
   # 选择: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
+  use: twikoo # Twikoo/Waline
   text: true # 在按钮旁边显示评论名称
   # lazyload: 评论系统将在评论元素进入浏览器视口时加载。
   # 如果设置为 true，评论计数将无效
@@ -355,9 +355,9 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
-  visitor: false
+  envId: prj_ZAOJVzsMhtZIgbZdOrK9u8FIqSZ4
+  region: ap-shanghai
+  visitor: true
   option:
 
 # Artalk
@@ -1104,8 +1104,8 @@ LA:
 # 标签卖萌
 diytitle:
   enable: true
-  leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
-  backTitle: ♪(^∇^*)欢迎肥来！
+  leaveTitle: =^.^= 不要走！再看看喵！
+  backTitle: (≧▽≦)欢迎小可爱回来喵！
 
 # 留言弹幕配置
 comment_barrage_config:
@@ -1192,7 +1192,7 @@ album:
 
 # 快捷键配置
 shortcutKey:
-  enable: false
+  enable: true
   delay: 100 # 所有键位延时触发而不是立即触发（包括shift，以解决和浏览器键位冲突问题）
   shiftDelay: 200 # shift按下延时多久开启
 
@@ -1202,7 +1202,7 @@ accesskey:
 
 # 友情链接顶部相关配置
 linkPageTop:
-  enable: false
+  enable: true
   title: 与数百名博主无限进步
   # 添加博主友链的评论自定义格式
   addFriendPlaceholder: "昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"
@@ -1212,23 +1212,23 @@ pageThumbnailSuffix: ""
 
 # 隐私协议弹窗
 agreementPopup:
-  enable: false
+  enable: true
   url: /privacy
 
 # 右键菜单
 rightClickMenu:
-  enable: false
+  enable: true
 
 # 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
 peoplecanvas:
   enable: true
-  img: https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png
+  img: https://bu.dusays.com/2025/02/23/67baae0bc1b94.png
 
 # 动效
 dynamicEffect:
   postTopWave: true # 文章顶部波浪效果
-  postTopRollZoomInfo: false # 文章顶部滚动时缩放
-  pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
+  postTopRollZoomInfo: true # 文章顶部滚动时缩放
+  pageCommentsRollZoom: true # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
@@ -1240,6 +1240,7 @@ inject:
     - <script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script> # jquery.min.js
     - <script async data-pjax src="/js/welcome.js"></script> # 个性定位欢迎信息
     - <script async data-pjax src="/js/Air Conditioner.js"></script> 
+    
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
