@@ -306,14 +306,14 @@ addtoany:
 # 评论系统
 # --------------------------------------
 
-comments:
-  # 最多两个评论系统，第一个将作为默认显示
-  # 选择: Valine/Waline/Twikoo/Artalk
-  use: Twikoo # Twikoo/Waline
-  text: true
-  lazyload: false
-  count: true
-  card_post_count: true
+# comments:
+#   # 最多两个评论系统，第一个将作为默认显示
+#   # 选择: Valine/Waline/Twikoo/Artalk
+#   use: Twikoo # Twikoo/Waline
+#   text: true
+#   lazyload: false
+#   count: true
+#   card_post_count: true
 
 # valine
 # https://valine.js.org
