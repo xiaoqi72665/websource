@@ -4,16 +4,8 @@ if !theme.disable_top_img && page.top_img !== false
     - var top_img = page.top_img || page.cover || page.randomcover
   else if is_page()
     - var top_img = page.top_img || theme.default_top_img
-  else if is_tag()
-    - var top_img = theme.tag_per_img && theme.tag_per_img[page.tag] 
-    - top_img = top_img ? top_img : (theme.tag_img !== false ? theme.tag_img || theme.default_top_img : false)
-  else if is_category()
-    - var top_img = theme.category_per_img && theme.category_per_img[page.category]
-    - top_img = top_img ? top_img : (theme.category_img !== false ? theme.category_img || theme.default_top_img : false)
   else if is_home()
     - var top_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
-  else if is_archive()
-    - var top_img = theme.archive_img !== false ? theme.archive_img || theme.default_top_img : false
   else
     - var top_img = page.top_img || theme.default_top_img
 
@@ -28,7 +20,7 @@ if !theme.disable_top_img && page.top_img !== false
           !=partial('includes/post/reward', {}, {cache: true})
       if theme.ptool.mode
         .reward-link.mode
-          a.reward-link-button(href=theme.ptool.mode data-pjax-state='')
+          a.reward-link-button(href=url_for(theme.ptool.mode))
             i.anzhiyufont.anzhiyu-icon-plant-fill
             | 运营模式与责任
     div.shareRight
@@ -46,41 +38,17 @@ if !theme.disable_top_img && page.top_img !== false
           a.share-button(target='_blank' href=`https://service.weibo.com/share/share.php?title=${site_title}&url=${url}&pic=${bg_img}` rel='external nofollow noreferrer noopener')
             i.anzhiyufont.anzhiyu-icon-weibo
       if theme.ptool.share_copyurl
+        script.
+          function copyCurrentPageUrl() {
+            var currentPageUrl = window.location.href;
+            var input = document.createElement("input");
+            input.setAttribute("value", currentPageUrl);
+            document.body.appendChild(input);
+            input.select();
+            input.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            document.body.removeChild(input);
+          }
         .share-link.copyurl
-          #post-share-url.share-button(title='复制链接' onclick='rm.copyPageUrl()')
+          #post-share-url.share-button(title='复制链接' onclick='copyCurrentPageUrl()')
             i.anzhiyufont.anzhiyu-icon-link
-  .post-tools-right
-    if (!theme.ptool.categories)
-      .tag_share
-        .post-meta__box
-          if (theme.post_meta.post.tags)
-            .post-meta__box__tag-list
-              each item, index in page.tags.data
-                a(href=url_for(item.path)).post-meta__box__tags
-                  span.tags-punctuation 
-                    i.anzhiyufont.anzhiyu-icon-tag
-                  =item.name
-                  span.tagsPageCount=item.length
-
-      !=partial('includes/third-party/share/index.pug', {}, {cache: true})
-if theme.ptool.categories
-  .tag_share
-    .post-meta__box
-      if (page.categories.data.length > 0)
-        .post-meta__box__category-list
-          each item, index in page.categories.data
-            a(href=url_for(item.path)).post-meta__box__categoryes
-              span.categoryes-punctuation 
-                i.anzhiyufont.anzhiyu-icon-inbox
-              =item.name
-              span.categoryesPageCount=item.length
-      if (theme.post_meta.post.tags)
-        .post-meta__box__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__box__tags
-              span.tags-punctuation 
-                i.anzhiyufont.anzhiyu-icon-tag
-              =item.name
-              span.tagsPageCount=item.length
-
-    !=partial('includes/third-party/share/index.pug', {}, {cache: true})

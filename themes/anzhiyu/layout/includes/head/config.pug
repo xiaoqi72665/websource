@@ -41,14 +41,17 @@
   }
 
   let copyright = 'undefined';
-  if (theme.copy.enable && theme.copy.copyright.enable){
+  if (theme.copy.enable){
     copyright = JSON.stringify({
+      copy: theme.copy.enable,
+      copyrightEbable: theme.copy.copyright.enable,
       limitCount: theme.copy.copyright.limit_count,
       languages: {
         author: _p("copy_copyright.author") + ': ' + config.author,
         link: _p("copy_copyright.link") + ': ',
         source: _p("copy_copyright.source") + ': ' + config.title,
-        info: _p("copy_copyright.info")
+        info: _p("copy_copyright.info"),
+        copySuccess: _p("copy_copyright.copySuccess")
       }
     })
   }
@@ -77,9 +80,11 @@
   }
 
   let highlight = 'undefined';
-  if ((config.highlight && config.highlight.enable) || (config.prismjs && config.prismjs.enable)) {
+  let syntaxHighlighter = config.syntax_highlighter;
+  let highlightEnable = syntaxHighlighter ? ['highlight.js', 'prismjs'].includes(syntaxHighlighter) : (config.highlight.enable || config.prismjs.enable);
+  if (highlightEnable) {
     highlight = JSON.stringify({
-      plugin: config.highlight.enable ? 'highlighjs' : 'prismjs',
+      plugin: syntaxHighlighter ? syntaxHighlighter : config.highlight.enable ? 'highlight.js' : 'prismjs',
       highlightCopy: theme.highlight_copy,
       highlightLang: theme.highlight_lang,
       highlightHeightLimit: theme.highlight_height_limit
@@ -93,17 +98,91 @@
     })
   }
 
-  let changeMainColorPost = 'undefined'
-  if (theme.theme_color && theme.theme_color.enable && theme.theme_color.cover_change) {
-    changeMainColorPost = theme.theme_color.cover_change
+  let mainTone = 'undefined'
+  if (theme.mainTone && theme.mainTone.enable) {
+    mainTone = JSON.stringify({
+      mode: theme.mainTone.mode,
+      api: theme.mainTone.api,
+      cover_change: theme.mainTone.cover_change,
+    })
+  }
+
+  let authorStatus = 'undefined'
+  if (theme.author_status && theme.author_status.enable) {
+    authorStatus = JSON.stringify({
+      skills: theme.author_status.skills
+    })
+  }
+
+  let preloader = 'undefined'
+  if (theme.preloader && theme.preloader.enable) {
+    preloader = JSON.stringify({
+      source: theme.preloader.source
+    })
+  }
+
+  let commentBarrageConfig = 'undefined'
+  if (theme.comment_barrage_config && theme.comment_barrage_config.enable) {
+    commentBarrageConfig = JSON.stringify(theme.comment_barrage_config)
+  }
+
+  let greetingBox = 'undefined'
+  if (theme.greetingBox && theme.greetingBox.enable) {
+    greetingBox = JSON.stringify(theme.greetingBox)
+  }
+
+  let LA51 = 'undefined'
+  if (theme.LA && theme.LA.enable) {
+    LA51 = JSON.stringify(theme.LA)
+  }
+
+  let shortcutKey = 'undefined'
+  if (theme.shortcutKey && theme.shortcutKey.enable) {
+    shortcutKey = JSON.stringify(theme.shortcutKey)
+  }
+
+  let diytitle = 'undefined'
+  if (theme.diytitle && theme.diytitle.enable) {
+    diytitle = JSON.stringify(theme.diytitle)
+  }
+
+  let postHeadAiDescription = 'undefined'
+  if (theme.post_head_ai_description && theme.post_head_ai_description.enable) {
+    postHeadAiDescription = JSON.stringify(theme.post_head_ai_description)
+  }
+
+  let linkPageTop = 'undefined'
+  if (theme.linkPageTop && theme.linkPageTop.enable) {
+    linkPageTop = JSON.stringify(theme.linkPageTop)
+  }
+
+  let peoplecanvas = 'undefined'
+  if (theme.peoplecanvas && theme.peoplecanvas.enable) {
+    peoplecanvas = JSON.stringify(theme.peoplecanvas)
+  }
+
+  let music_page_default = 'undefined'
+  if (theme.music_page_default) {
+    music_page_default = JSON.stringify(theme.music_page_default)
   }
 
 script.
-  const GLOBAL_CONFIG = { 
+  const GLOBAL_CONFIG = {
+    linkPageTop: !{linkPageTop},
+    peoplecanvas: !{peoplecanvas},
+    postHeadAiDescription: !{postHeadAiDescription},
+    diytitle: !{diytitle},
+    LA51: !{LA51},
+    greetingBox: !{greetingBox},
+    twikooEnvId: '!{theme.twikoo.envId}',
+    commentBarrageConfig:!{commentBarrageConfig},
+    music_page_default: !{music_page_default},
     root: '!{config.root}',
+    preloader: !{preloader},
     friends_vue_info: !{friends_vue_info},
     navMusic: !{theme.nav_music.enable},
-    changeMainColorPost: !{changeMainColorPost},
+    mainTone: !{mainTone},
+    authorStatus: !{authorStatus},
     algolia: !{algolia},
     localSearch: !{localSearch},
     translate: !{translate},
@@ -116,6 +195,7 @@ script.
     },
     relativeDate: {
       homepage: !{theme.post_meta.page.date_format === 'relative'},
+      simplehomepage: !{theme.post_meta.page.date_format === 'simple'},
       post: !{theme.post_meta.post.date_format === 'relative'}
     },
     runtime: '!{theme.runtimeshow.enable ? _p("aside.card_webinfo.runtime.unit") : ""}',
@@ -137,5 +217,7 @@ script.
     },
     isPhotoFigcaption: !{theme.photofigcaption},
     islazyload: !{theme.lazyload.enable},
-    isAnchor: !{theme.anchor}
+    isAnchor: !{theme.anchor},
+    shortcutKey: !{shortcutKey},
+    autoDarkmode: !{theme.darkmode.enable && theme.darkmode.autoChangeMode === 1}
   }

@@ -8,21 +8,21 @@ if site.data.about
     - let helloAbout = item.helloAbout
     - let skillsTips = item.skillsTips
     - let careers = item.careers
+    - let crrList = careers.list
+    - let crrItem = careers.item
+    - let avatarSkills = item.avatarSkills
     #about-page
       .author-box
+        if avatarSkills
+          .author-tag-left
+            each item in avatarSkills.left
+              span.author-tag=item
         .author-img
           img.no-lightbox(src=url_for(avatarImg) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
-        .image-dot
-        .author-tag-left
-          span.author-tag 🤖️ 数码极客
-          span.author-tag 🔍 不解决不放弃
-          span.author-tag 🏠 智能家居小能手
-          span.author-tag 🔨 开发小萌新
-        .author-tag-right
-          span.author-tag 折腾劲 MAX 🤝
-          span.author-tag 在路上 🏃
-          span.author-tag 践踏各种困难 🧱
-          span.author-tag 佛系爱摆烂 💢
+        if avatarSkills
+          .author-tag-right
+            each item in avatarSkills.right
+              span.author-tag=item
       p.p.center.logo.large 关于我
       p.p.center.small=subtitle
       .author-content
@@ -69,7 +69,7 @@ if site.data.about
                     each item, index in i.creativity_list
                       .skill-info
                         .skill-icon(style=`background: ${item.color}`)
-                          img.no-lightbox(title=item.name, src=item.icon)
+                          img.no-lightbox(title=item.name, src=item.icon, alt=item.name)
                         .skill-name
                           span=item.name 
                   .etc ...
@@ -78,11 +78,15 @@ if site.data.about
             .author-content-item-tips=careers.tips
             span.author-content-item-title=careers.title
             .careers-group
-              .careers-item
-                .circle(style='background:#357ef5')
-                each i in careers.item
-                  .name=i
-            img.author-content-img.no-lightbox(alt=careers.tips, src=url_for(careers.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'`)
+              if crrList
+                each career in crrList
+                  .career-item
+                    .circle(style=`background:${career.color ? career.color : "#357ef5"}`)
+                    .name=career.desc
+              else
+                .careers-none
+            if careers.img
+              img.author-content-img.no-lightbox(alt=careers.tips, src=url_for(careers.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'`)
       
       .author-content
         if theme.LA.enable
@@ -134,10 +138,10 @@ if site.data.about
       
       .author-content
         .author-content-item.personalities
-          - let {author_name, personality_type, photo_url, personality_img, name_url} = item.personalities
+          - let {author_name, personality_type, photo_url, personality_img, name_url, personality_type_color} = item.personalities
           .author-content-item-tips 性格
           span.author-content-item-title= author_name
-          .title2(style='color:#ac899c')= personality_type
+          .title2(style=`color:${personality_type_color ? personality_type_color : "#ac899c"}`)= personality_type
           .post-tips
             | 在 
             a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16personalities
@@ -222,7 +226,7 @@ if site.data.about
           .author-content-item.single.reward#about-reward
             .author-content-item-tips 致谢
             span.author-content-item-title 赞赏名单
-            .author-content-item-description 因为有你们，让我更加有创作的动力。
+            .author-content-item-description 感谢因为有你们，让我更加有创作的动力。
               .reward-list-all
                 - let reward_list_amount = item.reward_list.sort((a,b)=>b.amount -  a.amount)
                 each item, index in reward_list_amount
@@ -283,10 +287,9 @@ if site.data.about
 
 
     script(src=url_for(theme.asset.countup_js))
-    script(src=url_for(theme.asset.gsap_js))
     - const ck = theme.LA.ck
     script(defer).
-      (() => {
+      function initAboutPage() {
         fetch("https://v6-widget.51.la/v6/#{ck}/quote.js")
           .then(res => res.text())
           .then(data => {
@@ -401,7 +404,7 @@ if site.data.about
         }, 2000);
 
         document.addEventListener("pjax:send", function () {
-          clearInterval(pursuitInterval);
+          pursuitInterval && clearInterval(pursuitInterval);
         });
 
         var helloAboutEl = document.querySelector(".hello-about");
@@ -419,4 +422,9 @@ if site.data.about
             stagger: -0.1,
           });
         });
-      })();
+      }
+      if (typeof gsap === "object") {
+        initAboutPage()
+      } else {
+        getScript("!{url_for(theme.asset.gsap_js)}").then(initAboutPage);
+      }

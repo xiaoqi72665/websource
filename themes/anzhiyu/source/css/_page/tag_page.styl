@@ -42,7 +42,7 @@
   color: var(--anzhiyu-lighttext)
 
 #tag #tag-page-tags a 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft YaHei", sans-serif
+  font-family: $font-family
   font-size: 0.9em
 
 #tag #tag-page-tags a:hover 
@@ -50,9 +50,6 @@
   color: var(--anzhiyu-white) !important
   background: var(--anzhiyu-theme)
   border: var(--style-border-none)
-
-#tag #tag-page-tags a 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft YaHei", sans-serif
 
 span.tags-punctuation,
 span.categoryes-punctuation 
@@ -63,7 +60,7 @@ span.categoryes-punctuation .icon-biaoqian
   font-size: 13px
 
 .tagsPageCount 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft YaHei", sans-serif
+  font-family: $font-family
 
 [data-theme="light"] #post .tag_share .post-meta__box__tags span.tagsPageCount 
   background-color: transparent
@@ -150,7 +147,7 @@ span.categoryes-punctuation .icon-biaoqian
 
 
 
-body[data-type="tags"]
+body[data-type="tags"],body[data-type="categories"]
   #page
     border-radius: 12px
     +maxWidth768()
@@ -158,8 +155,9 @@ body[data-type="tags"]
         padding: 0px 15px 20px
       .page-title 
         margin: 8px 0 0px
-  #body-wrap .layout
-    padding: 20px 15px
+  +maxWidth768()
+    #body-wrap .layout
+      padding: 0 20px 15px
   #tag #tag-page-tags
     justify-content: center;
     a
