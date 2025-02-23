@@ -309,13 +309,11 @@ addtoany:
 comments:
   # 最多两个评论系统，第一个将作为默认显示
   # 选择: Valine/Waline/Twikoo/Artalk
-  use: twikoo # Twikoo/Waline
-  text: true # 在按钮旁边显示评论名称
-  # lazyload: 评论系统将在评论元素进入浏览器视口时加载。
-  # 如果设置为 true，评论计数将无效
+  use: Twikoo # Twikoo/Waline
+  text: true
   lazyload: false
-  count: false # 在文章的 top_img 中显示评论计数
-  card_post_count: false # 在首页显示评论计数
+  count: true
+  card_post_count: true
 
 # valine
 # https://valine.js.org

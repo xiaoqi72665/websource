@@ -5,10 +5,11 @@
   "scripts": {
     "clean": "hexo clean",
     "build": "hexo clean && hexo generate",
-    "server": "hexo clean && hexo generate && hexo server",
-    "deploy": "hexo clean && hexo bangumi -u && hexo generate && gulp && hexo deploy",
+    "server": "hexo clean && hexo generate && hexo all minifier && hexo server",
+    "deploy": "hexo clean && hexo bangumi -u && hexo generate && hexo all minifier && hexo deploy",
     "bangumi": "hexo bangumi -u",
-    "upload": "hexo clean && hexo generate && scp -r public/* root@1.95.212.101:/opt/1panel/apps/openresty/openresty/www/sites/kk/index/"
+    "minify": "hexo all minifier",
+    "upload": "hexo clean && hexo generate && hexo all minifier && scp -r public/* root@1.95.212.101:/opt/1panel/apps/openresty/openresty/www/sites/kk/index/"
   },
   "hexo": {
     "version": "6.3.0"
@@ -21,6 +22,7 @@
     "gulp-terser": "^2.1.0",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-all-minifier": "^0.5.7",
     "hexo-bilibili-bangumi": "^1.10.7",
     "hexo-blog-encrypt": "^3.1.9",
     "hexo-butterfly-envelope": "^1.0.15",
@@ -48,7 +50,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0",
     "gulp-fontmin": "^0.7.4",
     "gulp-plumber": "^1.2.1"
   }

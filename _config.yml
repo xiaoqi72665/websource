@@ -165,3 +165,5 @@ bangumi: # 追番设置
     top_img: false
     lazyload:
       enable: false
+
+all_minifier: true
